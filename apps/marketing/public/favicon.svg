@@ -1,0 +1,28 @@
+<svg width="30" height="60" viewBox="0 0 30 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7148 0.5C26.5794 10.3543 29.5 20.1851 29.5 30C29.5 39.8149 26.5794 49.6457 20.7148 59.5H15.209C5.361 49.6037 0.5 39.7727 0.5 30C0.5 20.2273 5.361 10.3963 15.209 0.5L20.7148 0.5Z" fill="#FAF9F7" stroke="#5E604B"/>
+<path d="M15 0L15 60" stroke="#5E604B" stroke-width="0.8"/>
+<g opacity="0.7">
+<path d="M15 15L6 19.5L15 15Z" fill="black"/>
+<path d="M15 15L6 19.5" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+<g opacity="0.7">
+<path d="M15 30L6 33L15 30Z" fill="black"/>
+<path d="M15 30L6 33" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+<g opacity="0.7">
+<path d="M15 45L6 48L15 45Z" fill="black"/>
+<path d="M15 45L6 48" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+<g opacity="0.7">
+<path d="M15 15L24 19.5L15 15Z" fill="black"/>
+<path d="M15 15L24 19.5" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+<g opacity="0.7">
+<path d="M15 30L24 33L15 30Z" fill="black"/>
+<path d="M15 30L24 33" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+<g opacity="0.7">
+<path d="M15 45L24 48L15 45Z" fill="black"/>
+<path d="M15 45L24 48" stroke="#5E604B" stroke-width="0.5"/>
+</g>
+</svg>

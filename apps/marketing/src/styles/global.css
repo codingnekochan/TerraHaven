@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-lato: "Lato", "sans-serif";
+  --font-playfair: "Playfair Display Variable", "serif";
+  --font-luckiest: "Luckiest Guy", "system-ui";
+}

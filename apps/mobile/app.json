@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "TerraHaven",
+    "slug": "terrahaven",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "terrahaven",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.terrahaven.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.terrahaven.app"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/100Thin/Lato_100Thin.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/100Thin_Italic/Lato_100Thin_Italic.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/300Light/Lato_300Light.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/300Light_Italic/Lato_300Light_Italic.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/400Regular/Lato_400Regular.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/400Regular_Italic/Lato_400Regular_Italic.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/700Bold/Lato_700Bold.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/700Bold_Italic/Lato_700Bold_Italic.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/900Black/Lato_900Black.ttf",
+            "/Users/mimi/Documents/PORTFOLIO PROJECTS/TerraHaven/node_modules/@expo-google-fonts/lato/900Black_Italic/Lato_900Black_Italic.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "27a21c5f-8c37-4f68-bd26-cc7000b64331"
+      }
+    }
+  }
+}
