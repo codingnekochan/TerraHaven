@@ -50,18 +50,17 @@ Internal admin dashboard for managing the platform.
 - API routes
 - Role-based access control
 
-### Backend(`packages/firebase`)
+### Backend(`packages/supabase`)
 
-Tech Stack: Firebase
-Centralized backend infrastructure providing authentication, database, storage, and cloud functions.
+Tech Stack: Supabase
+Centralized backend infrastructure providing authentication, database, storage, and edge functions.
 
 **Services:**
 
 Authentication: User management and auth flows
-Firestore: Real-time database
-Cloud Storage: File and media storage
-Cloud Functions: Serverless API endpoints
-Analytics: User behavior tracking
+PostgresDB: Real-time database
+Storage: File and media storage
+Edge Functions: Serverless API endpoints
 
 ## Shared Packages
 
