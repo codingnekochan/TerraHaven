@@ -4,4 +4,8 @@
   --font-lato: "Lato", "sans-serif";
   --font-playfair: "Playfair Display Variable", "serif";
   --font-luckiest: "Luckiest Guy", "system-ui";
+  /* colors */
+  --color-offwhite: oklch(1 0 0 / 80%);
+  --color-accent: oklch(0.9431 0.0415 69.62);
+  --color-black30: rgba(0, 0, 0, 0.3);
 }

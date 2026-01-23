@@ -24,7 +24,7 @@ export default function HomeScreen() {
           style={{ fontFamily: "Lato_900Black" }}
           className="text-4xl text-amber-800"
         >
-          Hello World
+          Hello
         </Text>
         <HelloWave />
       </ThemedView>
