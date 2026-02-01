@@ -1,0 +1,83 @@
+---
+import Image from "astro/components/Image.astro";
+import PlayStoreImg from "../icons/playstore.png";
+import AppStoreImg from "../icons/appstore.png";
+import { format } from "date-fns";
+import { Icon } from "astro-icon/components";
+
+const date = format(new Date(), "yyyy");
+const navLinks = [
+  { name: "About us", href: "#about" },
+  { name: "Products", href: "/about" },
+  { name: "Testimonial", href: "/services" },
+  { name: "Email us", href: "mailto:terrahaven@opemails.com" },
+];
+const socialIcons = ["facebook", "instagram", "x"];
+const contactMethods = [
+  "Email: TerraHaven@gamil.com",
+  "125 Evergreen Lane, Willow Creek, OR 97498, USA",
+  "Call: 123 456 789",
+];
+---
+
+<footer class="bg-brand pt-20 pb-10 pr-30 pl-21.25 flex flex-col">
+  <div class="self-end mb-20">
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="font-lato font-normal underline italic px-3 py-2 text-base leading-relaxed text-white70 mr-5 last:mr-0"
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </div>
+  <div class="flex justify-between items-start">
+    <div class="flex flex-col gap-4">
+      <h3 class="font-luckiest text-[26px] leading-8 tracking-wide text-white">
+        TerraHaven
+      </h3>
+      <p class="leading-5 text-lg font-lato text-white60 font-normal">
+        Join Terra Haven Today
+      </p>
+      <div class="flex gap-5 items-center">
+        <Image src={PlayStoreImg} alt="Play Store" width={150} />
+        <Image src={AppStoreImg} alt="Apple Store" width={150} />
+      </div>
+    </div>
+    <div>
+      <h3 class="font-lato text-lg leading-5 font-normal text-white">
+        Contact us
+      </h3>
+      <div class="mt-4">
+        {
+          contactMethods.map((contact) => (
+            <p class="leading-5 text-sm font-lato text-white60 italic font-normal mb-2 last:mb-0">
+              {contact}
+            </p>
+          ))
+        }
+      </div>
+    </div>
+    <div>
+      <h3 class="font-lato text-lg leading-5 font-normal text-white">
+        Follow us on our socials
+      </h3>
+      <div class="mt-4 flex items-center justify-center gap-4">
+        {
+          socialIcons.map((icon) => (
+            <div class="bg-black10  rounded-full border border-accent20 w-8.75 h-8.75 justify-center items-center flex">
+              <Icon name={icon} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <p
+    class="mt-30 text-center font-lato font-normal text-sm text-white50 italic leading-loose"
+  >
+    Copyright @ {date} TerraHaven, All rights reserved.
+  </p>
+</footer>

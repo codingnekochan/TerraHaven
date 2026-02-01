@@ -6,6 +6,12 @@
   --font-luckiest: "Luckiest Guy", "system-ui";
   /* colors */
   --color-offwhite: oklch(1 0 0 / 80%);
+  --color-white50: oklch(1 0 0 / 50.2%);
+  --color-white60: oklch(1 0 0 / 60%);
+  --color-white70: oklch(1 0 0 / 69.8%);
   --color-accent: oklch(0.9431 0.0415 69.62);
-  --color-black30: rgba(0, 0, 0, 0.3);
+  --color-accent20: oklch(0.9431 0.0415 69.62 / 20%);
+  --color-black10: oklch(0 0 0 / 10.2%);
+  --color-black30: oklch(0 0 0 / 30%);
+  --color-brand: oklch(0.26 0.018 112.29);
 }
