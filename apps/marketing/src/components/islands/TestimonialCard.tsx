@@ -1,3 +1,5 @@
+import { ProfileImage } from "@/assets/images";
+
 interface Props {
   image?: string;
   name: string;
@@ -11,11 +13,11 @@ export default function TestimonialCard({ image, name, content, job }: Props) {
       <div className="mb-8 flex flex-col items-center">
         <div className="w-20 h-20 overflow-hidden rounded-full mb-2">
           <img
-            src={image ?? "/images/profileOne.jpg"}
-            alt="Profile Image"
+            src={image ?? ProfileImage.src}
+            alt="profile image"
             width={80}
             height={80}
-            className="object-contain w-full h-full"
+            className="object-contain"
             loading="lazy"
           />
         </div>
