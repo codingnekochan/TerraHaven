@@ -1,0 +1,30 @@
+---
+import { Icon } from "astro-icon/components";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import AboutCarouselView from "./islands/AboutCarouselView";
+
+const images: any[] = ["", "", "", "", "", ""];
+const total = images.length;
+---
+
+<section class="py-20">
+  <div class="mx-30 mb-10 flex justify-between items-center">
+    <div class="flex items-center gap-4.5">
+      <h2 class="font-playfair-italic text-3xl italic text-brand-primary">
+        Love Where You Live
+      </h2>
+      <Icon name="favoriteIcon" class={"text-brand-secondary  w-5 h-5 mt-1"} />
+    </div>
+    <div class="px-4 py-2.75 bg-brand-primary rounded-[30px] flex items-center gap-4">
+      <ChevronLeft className="stroke-white50 stroke-[1.5px]" />
+      <p class="italic font-lato text-sm text-white">
+        1 / {total}
+      </p>
+      <ChevronRight className="stroke-accent01 stroke-[1.5px]" />
+    </div>
+  </div>
+  <AboutCarouselView data={images} client:load />
+</section>
+<section>
+  <div></div>
+</section>

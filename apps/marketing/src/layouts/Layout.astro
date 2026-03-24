@@ -1,21 +1,23 @@
 ---
-import '../styles/global.css'
-import '@fontsource/luckiest-guy'
-import '@fontsource/lato'
-import '@fontsource-variable/playfair-display'
-import '@fontsource/plus-jakarta-sans'
----  
+// Supports weights 400-900
+import "@fontsource-variable/playfair-display/wght-italic.css";
+import "@fontsource/lato";
+import "@fontsource/luckiest-guy";
+import "@fontsource/playfair-display";
+import "@fontsource/plus-jakarta-sans";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>TerraHaven</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>TerraHaven</title>
+  </head>
+  <body class="bg-bg">
+    <slot />
+  </body>
 </html>
-
