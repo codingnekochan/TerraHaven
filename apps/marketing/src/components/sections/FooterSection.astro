@@ -1,15 +1,15 @@
 ---
-import Image from "astro/components/Image.astro";
-import PlayStoreImg from "../icons/playstore.png";
-import AppStoreImg from "../icons/appstore.png";
-import { format } from "date-fns";
+import AppStoreImg from "@/icons/appstore.png";
+import PlayStoreImg from "@/icons/playstore.png";
 import { Icon } from "astro-icon/components";
+import Image from "astro/components/Image.astro";
+import { format } from "date-fns";
 
 const date = format(new Date(), "yyyy");
 const navLinks = [
   { name: "About us", href: "#about" },
-  { name: "Products", href: "/about" },
-  { name: "Testimonial", href: "/services" },
+  { name: "Products", href: "#products" },
+  { name: "Testimonial", href: "#testimonials" },
   { name: "Email us", href: "mailto:terrahaven@opemails.com" },
 ];
 const socialIcons = ["facebook", "instagram", "x"];

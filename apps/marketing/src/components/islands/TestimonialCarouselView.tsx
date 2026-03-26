@@ -4,9 +4,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi,
 } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
+import useCarousel from "@/lib/hooks/useCarousel";
 import TestimonialCard from "./TestimonialCard";
 
 interface Props {
@@ -19,26 +18,8 @@ interface Props {
 }
 
 function CarouselView({ data }: Props) {
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
-
-  useEffect(() => {
-    if (!carouselApi) return;
-    setScrollSnaps(carouselApi.scrollSnapList());
-    setCurrentIndex(carouselApi.selectedScrollSnap());
-
-    const handleSlideChange = () => {
-      setScrollSnaps(carouselApi.scrollSnapList());
-      setCurrentIndex(carouselApi.selectedScrollSnap());
-    };
-
-    carouselApi.on("scroll", handleSlideChange);
-
-    return () => {
-      carouselApi.off("scroll", handleSlideChange);
-    };
-  }, [carouselApi]);
+  const { setCarouselApi, currentIndex, scrollSnaps, goToSelected } =
+    useCarousel();
 
   return (
     <>
@@ -67,7 +48,7 @@ function CarouselView({ data }: Props) {
               className={`w-3 h-3 border border-brand-primary rounded-full mx-1 ${
                 currentIndex === index ? "bg-brand-primary" : "bg-inherit"
               }`}
-              onClick={() => carouselApi?.scrollTo(index)}
+              onClick={() => goToSelected(index)}
             />
           ))}
         </div>

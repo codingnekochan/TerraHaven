@@ -1,0 +1,40 @@
+---
+import WhyChooseUsCard from "../cards/WhyChooseUsCard.astro";
+import WhyUsCtaCard from "../cards/WhyUsCtaCard.astro";
+
+---
+
+<section>
+  <div class="py-20 px-30 flex justify-between gap-6">
+    <WhyUsCtaCard
+      bgUrl="bg-[url(../assets/images/livingroom.jpg)]"
+      title="Living room"
+    />
+    <WhyUsCtaCard
+      bgUrl="bg-[url(../assets/images/homedecor.jpg)]"
+      title="Home décor"
+    />
+  </div>
+  <div class="py-20 px-75">
+    <h2
+      class="font-playfair text-3xl tracking-wider text-black font-semibold text-center"
+    >
+      Why choose us?
+    </h2>
+    <div class="mt-10 grid gap-4 grid-cols-2 grid-rows-2">
+      <WhyChooseUsCard
+        bgUrl="bg-[url(../assets/images/sales.png)]"
+        text="After sales support and maintenance"
+        gridSpan="row-span-full"
+      />
+      <WhyChooseUsCard
+        bgUrl="bg-[url(../assets/images/custom.png)]"
+        text="Customized orders"
+      />
+      <WhyChooseUsCard
+        bgUrl="bg-[url(../assets/images/quality.png)]"
+        text="Superior quality"
+      />
+    </div>
+  </div>
+</section>

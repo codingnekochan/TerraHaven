@@ -1,0 +1,28 @@
+---
+const { bgUrl, title } = Astro.props;
+---
+
+<div
+  class={`${bgUrl} bg-center bg-cover bg-no-repeat w-1/2 rounded-[6px] overflow-hidden`}
+>
+  <div class="p-20 bg-black20 w-full h-full">
+    <div
+      class="py-10 px:15 xl:py-17.5 xl:px-33.75 border border-white flex flex-col items-center justify-center"
+    >
+      <h2
+        class="font-playfair text-2xl tracking-wider text-white font-medium text-center text-nowrap"
+      >
+        {title}
+      </h2>
+      <button
+        class="shopping-cta-button mt-4 px-6 py-3 bg-brand-secondary rounded-[6px]"
+      >
+        <p
+          class="text-center font-lato font-medium text-base tracking-wider text-white text-nowrap"
+        >
+          Start shopping
+        </p>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.embla__slide {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.embla__slide.is-selected {
+  opacity: 1;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -17,8 +26,11 @@
   --color-accent: oklch(0.9431 0.0415 69.62);
   --color-accent01: oklch(0.79 0.0621 65.1);
   --color-accent20: oklch(0.9431 0.0415 69.62 / 20%);
+  --color-black5: oklch(0 0 0 / 5%);
   --color-black10: oklch(0 0 0 / 10.2%);
+  --color-black20: oklch(0 0 0 / 20%);
   --color-black30: oklch(0 0 0 / 30%);
+  --color-black50: oklch(0 0 0 / 50%);
   --color-black60: oklch(0 0 0 / 60%);
   --color-brand: oklch(0.26 0.018 112.29);
   --color-brand-primary20: oklch(0.4811 0.0324 112.04 / 20%);

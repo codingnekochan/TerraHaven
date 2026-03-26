@@ -2,6 +2,10 @@
   "name": "terrahaven",
   "type": "module",
   "version": "0.0.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -17,6 +21,7 @@
     "@fontsource/plus-jakarta-sans": "^5.2.8",
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
+    "@terrahaven/shared": "workspace:*",
     "@types/react": "^19.2.10",
     "@types/react-dom": "^19.2.3",
     "astro": "^5.16.11",
@@ -24,6 +29,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.563.0",
     "react": "^19.2.4",

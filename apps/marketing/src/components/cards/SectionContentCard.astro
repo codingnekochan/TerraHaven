@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+
+const { title, subtitle, details, image, missions, footnote } = Astro.props;
+---
+
+<section class="py-20 px-30 flex group gap-x-20 even:flex-row-reverse">
+  <div class="w-1/2 rounded-xl overflow-hidden">
+    <Image src={image} alt={title} class={"w-full h-125 object-cover"} />
+  </div>
+  <div class="w-1/2 group-odd:mr-8.75">
+    <div>
+      {
+        title && (
+          <h3 class="font-playfair font-semibold text-3xl tracking-wide text-black mb-6">
+            {title}
+          </h3>
+        )
+      }
+      {
+        subtitle && (
+          <p class="font-lato font-medium text-xl tracking-wide mb-2">
+            {subtitle}
+          </p>
+        )
+      }
+      {
+        details && (
+          <p class="font-lato font-normal text-lg text-black">{details}</p>
+        )
+      }
+    </div>
+    <div class="ml-5">
+      {
+        missions && (
+          <ul class="list-disc">
+            {missions?.map((mission: string) => (
+              <li>{mission}</li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+    {
+      footnote && (
+        <p class="font-lato font-normal text-base text-gray italic mt-4">
+          {footnote}
+        </p>
+      )
+    }
+    <div class="mt-6 group-last:hidden">
+      <button class="shopping-cta-button"
+        ><p class="font-lato italic text-xl tracking-wider text-brand-secondary">
+          Start Shopping
+        </p>
+      </button>
+    </div>
+  </div>
+</section>

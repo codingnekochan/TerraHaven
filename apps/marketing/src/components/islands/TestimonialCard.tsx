@@ -31,7 +31,7 @@ export default function TestimonialCard({ image, name, content, job }: Props) {
         </p>
       </div>
 
-      <p className="font-lato text-xs leading-loose tracking-wide font-normal text-black text-center">
+      <p className="font-lato text-xs leading-loose tracking-wide font-normal text-black text-center line-clamp-6 h-36">
         {content}
       </p>
     </div>
