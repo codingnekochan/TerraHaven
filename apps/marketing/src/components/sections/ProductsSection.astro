@@ -1,6 +1,8 @@
 ---
+import ProductGridView from "@/components/islands/ProductGridView";
 import { productsList } from "@/lib/copy";
-import ProductGridView from '@/components/islands/ProductGridView'
 ---
 
-<ProductGridView productsList={productsList} client:load />
+<ProductGridView productsList={productsList} client:only="react">
+  <div class="loader" slot="fallback"></div>
+</ProductGridView>

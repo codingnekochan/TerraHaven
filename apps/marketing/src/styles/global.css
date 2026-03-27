@@ -1,15 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-.embla__slide {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0.3;
-}
-
-.embla__slide.is-selected {
-  opacity: 1;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme {

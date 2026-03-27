@@ -29,7 +29,9 @@ export default function ProductGridView({
   return (
     <section id="products" className="px-30 py-20">
       <div className="flex justify-between">
-        <h2>Hot products</h2>
+        <h2 className="font-playfair font-semibold text-3xl tracking-wider text-black">
+          Hot products
+        </h2>
         <div className=" flex justify-center items-center gap-10">
           {categories.map((category) => (
             <button

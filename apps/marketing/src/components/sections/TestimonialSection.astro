@@ -1,6 +1,6 @@
 ---
 import CarouselView from "../islands/TestimonialCarouselView.tsx";
-const {testimonialsList} = Astro.props
+const { testimonialsList } = Astro.props;
 ---
 
 <section class="px-20 py-25" id="testimonials">
@@ -13,6 +13,8 @@ const {testimonialsList} = Astro.props
     Feedback from our happy customers
   </p>
   <section class="mt-12.5">
-    <CarouselView data={testimonialsList} client:load />
+    <CarouselView data={testimonialsList} client:only="react">
+      <div class="loader" slot="fallback"></div>
+    </CarouselView>
   </section>
 </section>

@@ -1,16 +1,14 @@
 ---
-import { Icon } from "astro-icon/components";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import SectionContentCard from "../cards/SectionContentCard.astro";
 import AboutCarouselView from "../islands/AboutCarouselView";
-import useCarousel from "@/lib/hooks/useCarousel";
 const { aboutCarouselList, aboutUs, ourStory, ourMission } = Astro.props;
 const total = aboutCarouselList.length;
 ---
 
 <section class="py-20">
-
-  <AboutCarouselView data={aboutCarouselList} client:load />
+  <AboutCarouselView data={aboutCarouselList} client:only="react">
+    <div class="loader" slot="fallback"></div>
+  </AboutCarouselView>
 </section>
 <section id="about">
   <div>
