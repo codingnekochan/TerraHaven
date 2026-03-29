@@ -1,20 +1,21 @@
 ---
 import CarouselView from "../islands/TestimonialCarouselView.tsx";
+import Loader from "../Loader.astro";
 const { testimonialsList } = Astro.props;
 ---
 
-<section class="px-20 py-25" id="testimonials">
-  <h2 class="text-center font-semibold text-3xl font-playfair mb-2.5">
+<section class="px-6 lg:px-20 py-10 lg:py-25" id="testimonials">
+  <h2 class="text-center font-semibold text-[20px] lg:text-3xl font-playfair">
     Testimonials
   </h2>
   <p
-    class="text-center font-lato text-base leading-normal tracking-wide text-black"
+    class="max-md:hidden mt-2.5 mb-12.5 text-center font-lato text-base leading-normal tracking-wide text-black"
   >
     Feedback from our happy customers
   </p>
-  <section class="mt-12.5">
+  <section class="max-md:mt-6">
     <CarouselView data={testimonialsList} client:only="react">
-      <div class="loader" slot="fallback"></div>
+      <Loader />
     </CarouselView>
   </section>
 </section>

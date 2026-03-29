@@ -1,5 +1,14 @@
-<nav class="navbar py-6">
-  <ul class="nav-list flex justify-center items-center gap-6 font-lato text-sm font-semibold text-offwhite">
+---
+import MenuIcon from "@/components/customIcons/MenuIcon";
+---
+
+<nav class="max-md:self-end navbar pt-10 max-md:pr-6 md:py-6">
+  <div>
+    <MenuIcon className={"md:hidden stroke-white"} />
+  </div>
+  <ul
+    class="max-md:hidden nav-list flex justify-center items-center gap-6 font-lato text-sm font-semibold text-offwhite"
+  >
     <li class="nav-item"><a href="#about">About Us</a></li>
     <li class="nav-item"><a href="#products">Products</a></li>
     <li class="nav-item"><a href="#testimonials">Testimonials</a></li>

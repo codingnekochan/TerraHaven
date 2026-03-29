@@ -50,5 +50,7 @@ export default function useCarousel() {
     goToSelected,
     goToPrevious,
     gotoNext,
+    carouselStart: currentIndex === 0,
+    carouselEnd: currentIndex === scrollSnaps.length - 1,
   };
 }

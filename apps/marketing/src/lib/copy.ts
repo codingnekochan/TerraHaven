@@ -14,7 +14,7 @@ export const pageContent = {
     ourStory: {
       title: "Our Story",
       details:
-        "Terra Haven was born from a quiet desire to slow down and live more intentionally. In a world that moves fast, we wanted to create pieces that bring calm, warmth, and meaning into everyday spaces. \n Thoughtfully crafted and inspired by nature, each Terra Haven piece is designed to help your home feel like a place of rest, while honoring the planet that makes it possible.",
+        "Terra Haven was born from a quiet desire to slow down and live more intentionally. In a world that moves fast, we wanted to create pieces that bring calm, warmth, and meaning into everyday spaces.\n Thoughtfully crafted and inspired by nature, each Terra Haven piece is designed to help your home feel like a place of rest, while honoring the planet that makes it possible.",
       image: OurStoryImage,
     },
 
