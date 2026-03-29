@@ -24,12 +24,12 @@ export default function AboutCarouselView({ data }: { data: any[] }) {
   useEffect(() => {}, []);
   return (
     <>
-      <div className="mx-4 md:mx-30 mb-4 md:mb-10 flex justify-between items-center">
+      <div className="mx-4 md:mx-17 lg:mx-30 mb-4 md:mb-7 lg:mb-10 flex justify-between items-center">
         <div className="flex items-center gap-3 md:gap-4.5">
-          <h2 className="font-playfair-italic text-base tracking-wider md:text-3xl italic text-brand-primary">
+          <h2 className="font-playfair-italic text-base tracking-wider md:text-2xl lg:text-3xl italic text-brand-primary">
             Love Where You Live
           </h2>
-          <div className="lg:mt-2">
+          <div className="md:mt-2">
             <FavoriteIcon currentColor="#B74A0D" />
           </div>
         </div>

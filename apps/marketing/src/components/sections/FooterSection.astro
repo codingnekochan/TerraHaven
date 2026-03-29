@@ -21,7 +21,7 @@ const contactMethods = [
 ---
 
 <footer class="bg-brand">
-  <div class="lg:hidden pt-10 px-6 pb-6">
+  <div class="lg:hidden pt-10 md:pt-20 px-6 md:px-12 pb-6 md:pb-12">
     <div class="flex justify-between gap-16 align-start">
       <div>
         <h3 class="font-lato text-lg leading-5 font-normal text-white">
@@ -30,7 +30,7 @@ const contactMethods = [
         <div class="mt-4">
           {
             contactMethods.map((contact) => (
-              <p class="leading-5 text-xs font-lato text-white60 italic font-normal mb-1 last:mb-0">
+              <p class="leading-5 text-xs md:text-base font-lato text-white60 italic font-normal mb-1 last:mb-0">
                 {contact}
               </p>
             ))
@@ -42,7 +42,7 @@ const contactMethods = [
           navLinks.map((link) => (
             <a
               href={link.href}
-              class="font-lato font-normal underline italic text-sm leading-relaxed mb-2 last:mb-0 text-white70"
+              class="font-lato font-normal underline italic text-sm md:text-base leading-relaxed mb-2 last:mb-0 text-white70"
             >
               {link.name}
             </a>
@@ -53,7 +53,7 @@ const contactMethods = [
     <div class="mt-20">
       <div>
         <p
-          class="leading-5 text-sm text-center italic font-lato text-white60 font-normal"
+          class="leading-5 text-sm md:text-base text-center italic font-lato text-white60 font-normal"
         >
           Join Terra Haven Today
         </p>
@@ -64,7 +64,7 @@ const contactMethods = [
       </div>
       <div class="mt-10">
         <h3
-          class="font-lato text-sm text-center leading-5 font-normal text-white"
+          class="font-lato text-sm md:text-base text-center leading-5 font-normal text-white"
         >
           Follow us on our socials
         </h3>

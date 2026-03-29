@@ -27,7 +27,7 @@ export default function ProductGridView({
   };
   console.log(filter);
   return (
-    <section id="products" className="px-6 lg:px-30 py-10 lg:py-20">
+    <section id="products" className="px-6 md:px-12 lg:px-30 py-10 md:py-15 lg:py-20">
       <div className="lg:flex justify-between">
         <h2 className="font-playfair font-semibold text-2xl max-lg:text-center lg:text-3xl tracking-wider text-black">
           Hot products
@@ -44,7 +44,7 @@ export default function ProductGridView({
           ))}
         </div>
       </div>
-      <div className=" mt-6 lg:mt-20 grid grid-cols-3 lg:grid-cols-4 gap-1.5 md:gap-2">
+      <div className=" mt-6 lg:mt-20 grid grid-cols-3  md:grid-cols-4 gap-1.5 md:gap-2">
         {productsList
           .filter((product: ProductInterface) => product.category === filter)
           .map((product: ProductInterface) => (

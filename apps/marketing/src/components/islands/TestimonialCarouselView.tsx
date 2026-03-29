@@ -43,7 +43,7 @@ function CarouselView({ data }: Props) {
         }}
         setApi={setCarouselApi}
       >
-        <CarouselPrevious className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-md:hidden" />
+        <CarouselPrevious className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-lg:hidden" />
         <CarouselContent>
           {data.map((testimonial, index) => (
             <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={index}>
@@ -51,9 +51,9 @@ function CarouselView({ data }: Props) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselNext className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-md:hidden" />
+        <CarouselNext className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-lg:hidden" />
       </Carousel>
-      <div className="max-md:hidden">
+      <div className="max-lg:hidden">
         {scrollSnaps.length > 0 && (
           <div className="flex justify-center mt-4">
             {scrollSnaps.map((_, index) => (
@@ -68,11 +68,11 @@ function CarouselView({ data }: Props) {
           </div>
         )}
       </div>
-      <div className="flex justify-end items-center gap-4 mt-4">
+      <div className="lg:hidden flex justify-end items-center gap-4 mt-4">
         <button
           onClick={goToPrevious}
           disabled={carouselStart}
-          className={`bg-brand-primary w-7 h-7 rounded-full flex justify-center items-center ${carouselStart ? "bg-brand-primary30" : "bg-brand-primary"}`}
+          className={`bg-brand-primary w-7 h-7 md:w-8 md:h-8  rounded-full flex justify-center items-center ${carouselStart ? "bg-brand-primary30" : "bg-brand-primary"}`}
         >
           <ArrowLeft className="stroke-white w-4" />
         </button>
@@ -82,7 +82,7 @@ function CarouselView({ data }: Props) {
         <button
           onClick={gotoNext}
           disabled={carouselEnd}
-          className={`bg-brand-primary w-7 h-7 rounded-full flex justify-center items-center ${carouselEnd ? "bg-brand-primary30" : "bg-brand-primary"}`}
+          className={`bg-brand-primary w-7 md:w-8 h-7 md:h-8 rounded-full flex justify-center items-center ${carouselEnd ? "bg-brand-primary30" : "bg-brand-primary"}`}
         >
           <ArrowRight className="stroke-white w-4" />
         </button>

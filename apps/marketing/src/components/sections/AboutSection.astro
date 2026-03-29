@@ -6,7 +6,7 @@ const { aboutCarouselList, aboutUs, ourStory, ourMission } = Astro.props;
 const total = aboutCarouselList.length;
 ---
 
-<section class="py-10 md:py-20">
+<section class="py-10 md:py-15 lg:py-20">
   <AboutCarouselView data={aboutCarouselList} client:only="react">
     <Loader />
   </AboutCarouselView>
