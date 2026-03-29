@@ -43,17 +43,17 @@ function CarouselView({ data }: Props) {
         }}
         setApi={setCarouselApi}
       >
-        <CarouselPrevious className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-lg:hidden" />
+        <CarouselPrevious className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-xl:hidden" />
         <CarouselContent>
           {data.map((testimonial, index) => (
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={index}>
+            <CarouselItem className="md:basis-1/2 xl:basis-1/3" key={index}>
               <TestimonialCard {...testimonial} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselNext className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-lg:hidden" />
+        <CarouselNext className="bg-brand-primary hover:bg-brand-primary hover:text-white text-white disabled:bg-brand-primary30 w-10 h-10 max-xl:hidden" />
       </Carousel>
-      <div className="max-lg:hidden">
+      <div className="max-xl:hidden">
         {scrollSnaps.length > 0 && (
           <div className="flex justify-center mt-4">
             {scrollSnaps.map((_, index) => (
@@ -68,7 +68,7 @@ function CarouselView({ data }: Props) {
           </div>
         )}
       </div>
-      <div className="lg:hidden flex justify-end items-center gap-4 mt-4">
+      <div className="xl:hidden flex justify-end items-center gap-4 mt-4">
         <button
           onClick={goToPrevious}
           disabled={carouselStart}

@@ -24,9 +24,9 @@ export default function AboutCarouselView({ data }: { data: any[] }) {
   useEffect(() => {}, []);
   return (
     <>
-      <div className="mx-4 md:mx-17 lg:mx-30 mb-4 md:mb-7 lg:mb-10 flex justify-between items-center">
+      <div className="mx-4 md:mx-17 xl:mx-30 mb-4 md:mb-7 xl:mb-10 flex justify-between items-center">
         <div className="flex items-center gap-3 md:gap-4.5">
-          <h2 className="font-playfair-italic text-base tracking-wider md:text-2xl lg:text-3xl italic text-brand-primary">
+          <h2 className="font-playfair-italic text-base tracking-wider md:text-2xl xl:text-3xl italic text-brand-primary">
             Love Where You Live
           </h2>
           <div className="md:mt-2">
@@ -64,7 +64,7 @@ export default function AboutCarouselView({ data }: { data: any[] }) {
         <CarouselContent className="max-md:-ml-2">
           {data.map((item, index) => (
             <CarouselItem
-              className="basis-[30%] md:basis-1/3 lg:basis-1/4 max-md:pl-2"
+              className="basis-[30%] md:basis-1/3 xl:basis-1/4 max-md:pl-2"
               key={index}
             >
               <AboutCarouselCard {...item} />
