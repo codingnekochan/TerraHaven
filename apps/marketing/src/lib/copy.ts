@@ -14,7 +14,7 @@ export const pageContent = {
     ourStory: {
       title: "Our Story",
       details:
-        "Terra Haven was born from a quiet desire to slow down and live more intentionally. In a world that moves fast, we wanted to create pieces that bring calm, warmth, and meaning into everyday spaces.\n Thoughtfully crafted and inspired by nature, each Terra Haven piece is designed to help your home feel like a place of rest, while honoring the planet that makes it possible.",
+        "Terra Haven was born from a quiet desire to slow down and live more intentionally. In a world that moves fast, we wanted to create pieces that bring calm, warmth, and meaning into everyday spaces.\nThoughtfully crafted and inspired by nature, each Terra Haven piece is designed to help your home feel like a place of rest, while honoring the planet that makes it possible.",
       image: OurStoryImage,
     },
 
@@ -22,7 +22,7 @@ export const pageContent = {
       title: "Our Mission",
       subtitle: "We are committed to:",
       missions: [
-        " Sustainability: Using ethically sourced, eco-friendly materials to reduce our carbon footprint.",
+        "Sustainability: Using ethically sourced, eco-friendly materials to reduce our carbon footprint.",
         "Comfort: Designing cozy, timeless pieces that turn houses into homes.",
         "Craftsmanship: Partnering with skilled artisans to create high-quality, durable products.",
         "Timeless Design: Blending natural textures and earthy tones for a harmonious, stylish home.",
