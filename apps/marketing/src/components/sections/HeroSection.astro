@@ -1,0 +1,27 @@
+---
+import { Icon } from "astro-icon/components";
+import NavbarSection from "./NavbarSection.astro";
+---
+
+<header
+  class="hero-section bg-[url(../assets/images/background.jpg)] h-screen bg-center bg-cover"
+>
+  <div
+    class="flex-col flex justify-between h-full items-center bg-black30 pb-16"
+  >
+    <NavbarSection />
+    <div>
+      <h1
+        class="font-luckiest text-white text-[32px] md:text-[50px] text-center tracking-widest"
+      >
+        Terra Haven
+      </h1>
+      <p
+        class="text-center text-accent font-medium text-xs md:text-sm font-lato tracking-wider"
+      >
+        Rooted in Nature, Crafted for Comfort!
+      </p>
+    </div>
+    <Icon name="arrowDown" color={"#000000"} class={'w-6 h-2.5 md:w-7.5 md:h-3.5'} />
+  </div>
+</header>

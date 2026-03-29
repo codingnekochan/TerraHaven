@@ -1,8 +1,26 @@
 ---
-import HeroSection from '../components/HeroSection.astro';
-import Layout from '../layouts/Layout.astro';
+import AboutSection from "@/components/sections/AboutSection.astro";
+import ProductsSection from "@/components/sections/ProductsSection.astro";
+import WhyUsSection from "@/components/sections/WhyUsSection.astro";
+import FooterSection from "../components/sections/FooterSection.astro";
+import HeroSection from "../components/sections/HeroSection.astro";
+import TestimonialSection from "../components/sections/TestimonialSection.astro";
+import Layout from "../layouts/Layout.astro";
+import { pageContent } from "../lib/copy.ts";
 ---
 
 <Layout>
-<HeroSection/>
+  <HeroSection />
+  <AboutSection
+    aboutCarouselList={pageContent.aboutSection.aboutCarouselImages}
+    aboutUs={pageContent.aboutSection.aboutUs}
+    ourStory={pageContent.aboutSection.ourStory}
+    ourMission={pageContent.aboutSection.ourMission}
+  />
+  <ProductsSection />
+  <WhyUsSection />
+  <TestimonialSection testimonialsList={pageContent.testimonialsList} />
+  <FooterSection />
 </Layout>
+
+<script src="../lib//scripts/page-script.ts"></script>

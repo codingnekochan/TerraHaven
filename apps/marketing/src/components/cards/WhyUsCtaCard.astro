@@ -1,0 +1,40 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { bgUrl, title } = Astro.props;
+---
+
+<div class="w-1/2">
+  <div
+    class={`${bgUrl} bg-center bg-cover bg-no-repeat rounded-[6px] overflow-hidden`}
+  >
+    <div class="max-xl:py-8 max-xl:px-6 xl:p-20 bg-black20 w-full h-full">
+      <div
+        class="py-10 px-15 xl:py-17.5 xl:xl:px-33.75 border border-white flex flex-col items-center justify-center"
+      >
+        <h2
+          class="font-playfair text-sm md:text-2xl tracking-wider text-white font-medium text-center text-nowrap"
+        >
+          {title}
+        </h2>
+        <button
+          class="max-md:hidden shopping-cta-button mt-4 md:px-3 xl:px-6 md:py-1.5 xl:py-3 bg-brand-secondary rounded-[6px]"
+        >
+          <p
+            class="text-center font-lato font-medium text-base tracking-wider text-white text-nowrap"
+          >
+            Start shopping
+          </p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button
+    class="shopping-cta-button md:hidden flex justify-center items-center gap-2 mt-2 text-brand-secondary"
+  >
+    <p class="font-lato italic text-sm underline decoration-1">
+      Start shopping
+    </p>
+    <Icon name={"arrowRight"} class={"mt-1.5 w-6 stroke-[1px]"} />
+  </button>
+</div>

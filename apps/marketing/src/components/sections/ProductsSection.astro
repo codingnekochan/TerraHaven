@@ -1,0 +1,9 @@
+---
+import ProductGridView from "@/components/islands/ProductGridView";
+import { productsList } from "@/lib/copy";
+import Loader from "../Loader.astro";
+---
+
+<ProductGridView productsList={productsList} client:only="react">
+    <Loader />
+</ProductGridView>

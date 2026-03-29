@@ -1,0 +1,26 @@
+---
+import CarouselView from "../islands/TestimonialCarouselView.tsx";
+import Loader from "../Loader.astro";
+const { testimonialsList } = Astro.props;
+---
+
+<section
+  class="px-6 md:px-12 xl:px-20 py-10 md:py-20 xl:py-25"
+  id="testimonials"
+>
+  <h2
+    class="text-center font-semibold text-[20px] md:text-2x xl:text-3xl font-playfair"
+  >
+    Testimonials
+  </h2>
+  <p
+    class="max-md:hidden mt-2.5 mb-12.5 text-center font-lato text-base leading-normal tracking-wide text-black"
+  >
+    Feedback from our happy customers
+  </p>
+  <section class="max-md:mt-6">
+    <CarouselView data={testimonialsList} client:only="react">
+      <Loader />
+    </CarouselView>
+  </section>
+</section>

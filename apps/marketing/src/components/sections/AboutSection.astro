@@ -1,0 +1,20 @@
+---
+import SectionContentCard from "../cards/SectionContentCard.astro";
+import AboutCarouselView from "../islands/AboutCarouselView";
+import Loader from "../Loader.astro";
+const { aboutCarouselList, aboutUs, ourStory, ourMission } = Astro.props;
+const total = aboutCarouselList.length;
+---
+
+<section class="py-10 md:py-15 xl:py-20">
+  <AboutCarouselView data={aboutCarouselList} client:only="react">
+    <Loader />
+  </AboutCarouselView>
+</section>
+<section id="about">
+  <div>
+    <SectionContentCard {...aboutUs} />
+    <SectionContentCard {...ourStory} />
+    <SectionContentCard {...ourMission} />
+  </div>
+</section>
